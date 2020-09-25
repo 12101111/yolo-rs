@@ -1,0 +1,5 @@
+/target
+/img
+*.jpg
+*.so
+*.py

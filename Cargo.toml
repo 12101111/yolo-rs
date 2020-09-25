@@ -1,0 +1,22 @@
+[package]
+name = "yolo-rs"
+version = "0.1.0"
+authors = ["韩朴宇 <w12101111@gmail.com>"]
+license = "Apache-2.0"
+edition = "2018"
+
+[features]
+default = ["yolov3"]
+yolov3 = []
+yolov4 = []
+
+[dependencies]
+ndarray = "0.13"
+image = "0.23"
+tvm = { path = "../tvm/rust/tvm" }
+tvm-sys = { path = "../tvm/rust/tvm-sys" }
+smallvec = "1"
+float-ord = "0.2"
+sdl2 = { version = "*", features = ["ttf"] }
+libc = "*"
+once_cell = "*"
